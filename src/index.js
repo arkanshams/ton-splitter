@@ -25,16 +25,38 @@ async function main() {
                 'Exit'
             ]
         }
-    ])
+    ]);
+
+    switch (action) {
+        case 'Create Child Wallets':
+            await createChildWallets(walletManager);
+            break;
+        case 'View All Wallets':
+            await viewAllWallets(walletManager);
+            break;
+        case 'Check Master Wallet Balance':
+            await checkMasterBalance(walletManager);
+            break;
+        case 'Convert USDT to TON':
+            await convertUsdtToTon(walletManager);
+            break;
+        case 'Distribute TON to Child Wallets':
+            await distributeTonToChildren(walletManager);
+            break;
+        case 'Exit':
+            console.log('👋 Goodbye!');
+            process.exit(0);
+    }
+    
+    // Restart the menu
+    setTimeout(() => main(), 2000);
 }
 
 async function convertUsdtToTon(walletManager) {
     try {
-        // Get current TON price
         const tonPrice = await walletManager.getTonPrice();
         console.log(`\n💰 Current TON Price: ${tonPrice}`);
         
-        // Get USDT amount to convert
         const { usdtAmount } = await inquirer.prompt([
             {
                 type: 'number',
@@ -106,7 +128,7 @@ async function distributeTonToChildren(walletManager) {
             }
         ]);
         
-        const totalToDistribute = amount === 0 ? parseFloat(masterBalance) * 0.95 : amount; // Keep 5% for fees
+        const totalToDistribute = amount === 0 ? parseFloat(masterBalance) * 0.95 : amount;
         const amountPerWallet = (totalToDistribute / childWallets.children.length).toFixed(6);
         
         console.log(`\n📊 Distribution Details:`);
@@ -139,30 +161,6 @@ async function distributeTonToChildren(walletManager) {
     } catch (error) {
         console.error('❌ Error distributing TON:', error.message);
     }
-    
-    switch (action) {
-        case 'Create Child Wallets':
-            await createChildWallets(walletManager);
-            break;
-        case 'View All Wallets':
-            await viewAllWallets(walletManager);
-            break;
-        case 'Check Master Wallet Balance':
-            await checkMasterBalance(walletManager);
-            break;
-        case 'Convert USDT to TON':
-            await convertUsdtToTon(walletManager);
-            break;
-        case 'Distribute TON to Child Wallets':
-            await distributeTonToChildren(walletManager);
-            break;
-        case 'Exit':
-            console.log('👋 Goodbye!');
-            process.exit(0);
-    }
-    
-    // Restart the menu
-    setTimeout(() => main(), 2000);
 }
 
 async function createChildWallets(walletManager) {
@@ -186,7 +184,6 @@ async function createChildWallets(walletManager) {
         const wallets = await walletManager.createChildWallets(count);
         console.log(`✅ Successfully created ${wallets.length} child wallets!`);
         
-        // Show first 5 wallets as preview
         console.log('\n📋 Preview of created wallets (first 5):');
         wallets.slice(0, 5).forEach((wallet, index) => {
             console.log(`${index + 1}. Address: ${wallet.address}`);
