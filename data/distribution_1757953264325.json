@@ -1,0 +1,103 @@
+{
+  "timestamp": "2025-09-15T16:21:04.325Z",
+  "totalAmount": 36,
+  "totalWallets": 18,
+  "amountPerWallet": 2,
+  "results": {
+    "success": true,
+    "successCount": 18,
+    "failedCount": 0,
+    "transactions": [
+      {
+        "to": "EQCYHccVunTW2FywDolOAEiCXoKY9NavzGX4cVzg7JIb7tC_",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQBxlUMwGTdHl3N0C9YEboZq0P6PEaZzzUiCzzZmJChqrMcD",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQBaQ-qHu7QqdfCZBAdeOXSRb8Su44eejlyp64Wl1zk-jDbW",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQBfS-oaAKrMvNPbD3IOX2eCAyaHStQao_uCyjMwuYuvJs77",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQCdRy4FC2YlTbj2D72kMAZ-e6HLXpMHZRpo1P8lRYNwDZCM",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQA-0BibXfNzK0zqJzp5IHndplH7lfDlQAOaPW91SKQ4Sjks",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQCVkYMnnaYHO1ukXmK78PBbrXArMD6-J9v_1oG2vNLW7d2h",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQB01Y55k_qiIWUoE9s4AHM3cVv0mKMGizMaY0DoIzsqrGt0",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQCdGI3aeYSHSVJYX5-N3cOwkr6wBX_vyt9gEs3-oYzvJ4dF",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQD6PLef0rBUaJapl2YA51fnQltK5z5C4zyPbRbqbiKGgoxI",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQAnMh5ATWiY9eR9Zo8Z_kMAlKpqMYbjoIttb1Yg0LqT9OMX",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQAtqNyRfbtwjltfyjiAz07_4XRIYJFVbppVTVANktwkDwjV",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQAqf5AccTuOqtlFvaaOtv92U5MLH-aj4Cbe5WBYIVMWD_fZ",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQABYb9GGmqinAQWEp5W8SDdKznkj5NIAPg6VQQhvd6xS-cz",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQDtNTHXoQnrgc9i7m65RSnKG4LaYcG1PxdrIRMw9tG189Yf",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQDlBMFHgpRGhGrrxAUyEALrCQYBaNP5TtwX5RrCJV-YMYzX",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQCP946i2I5OeiR04kkbgUITmDFeQq4PIUgiiKjOdVHeVUNX",
+        "amount": 2,
+        "status": "simulated_success"
+      },
+      {
+        "to": "EQBaudE0cz0GeElo4VGg-AbeUO8-W_YB6eEY5SwR47tikcV3",
+        "amount": 2,
+        "status": "simulated_success"
+      }
+    ]
+  }
+}
